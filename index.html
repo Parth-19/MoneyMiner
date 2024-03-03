@@ -54,6 +54,26 @@
       font-size: 1.2rem;
     }
   </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var heroCarousel = document.getElementById('heroCarousel');
+        var carousel = new bootstrap.Carousel(heroCarousel, {
+            interval: false // Disable auto sliding
+        });
+
+        var carouselNext = document.querySelector('.carousel-control-next');
+        var carouselPrev = document.querySelector('.carousel-control-prev');
+
+        carouselNext.addEventListener('click', function() {
+            carousel.next();
+        });
+
+        carouselPrev.addEventListener('click', function() {
+            carousel.prev();
+        });
+    });
+</script>
+
 
   
 </head>
@@ -88,7 +108,7 @@
           <li><a class="nav-link scrollto" href="#heroCarousel">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Courses</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Free Videos</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Free Coursse</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -101,9 +121,8 @@
   <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <section id="hero1" class="hero d-flex align-items-center">
-                <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
-                    
+            <section id="hero1" class="hero d-flex align-items-center" style="background-image: url('https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
                     <h1>Claim Your Victory in the Options Market with Proven Strategies.</h1>
                     <br><br>
                     <a href="#about" class="btn-get-started scrollto">Get Started</a>
@@ -111,9 +130,8 @@
             </section><!-- End Hero -->
         </div>
         <div class="carousel-item">
-            <section id="hero2" class="hero d-flex align-items-center">
-                <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
-                   
+            <section id="hero2" class="hero d-flex align-items-center" style="background-image: url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
                     <h1>Master the Art of Options Warfare</h1>
                     <br><br>
                     <a href="#about" class="btn-get-started scrollto">Get Started</a>
@@ -121,35 +139,38 @@
             </section><!-- End Hero -->
         </div>
         <div class="carousel-item">
-          <section id="hero2" class="hero d-flex align-items-center">
-              <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
+            <section id="hero3" class="hero d-flex align-items-center" style="background-image: url('https://images.unsplash.com/photo-1560221328-12fe60f83ab8?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+                    <h1>The Pandavas Had Krishna, You Have Options Kurukshetra</h1>
+                    <br><br>
+                    <a href="#about" class="btn-get-started scrollto">Get Started</a>
+                </div>
+            </section><!-- End Hero -->
+        </div>
+        
+        <div class="carousel-item">
+          <section id="hero4" class="hero d-flex align-items-center" style="background-image: url('https://images.unsplash.com/photo-1640340434855-6084b1f4901c?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+              <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
                  
-                  <h1>The Pandavas Had Krishna, You Have Options Kurukshetra</h1>
+                  <h1>Make Informed Decisions in the Options Market with Options Kurukshetra</h1>
                   <br><br>
                   <a href="#about" class="btn-get-started scrollto">Get Started</a>
               </div>
           </section><!-- End Hero -->
       </div>
       <div class="carousel-item">
-        <section id="hero2" class="hero d-flex align-items-center">
-            <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
+        <section id="hero5" class="hero d-flex align-items-center" style="background-image: url('https://images.unsplash.com/photo-1560221328-12fe60f83ab8?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
                
-                <h1>Make Informed Decisions in the Options Market with Options Kurukshetra</h1>
+                <h1>Unlock Your Free 'Gita of Options Trading' & Master the Art of Winning</h1>
                 <br><br>
                 <a href="#about" class="btn-get-started scrollto">Get Started</a>
             </div>
         </section><!-- End Hero -->
     </div>
-    <div class="carousel-item">
-      <section id="hero2" class="hero d-flex align-items-center">
-          <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
-             
-              <h1>Unlock Your Free 'Gita of Options Trading' & Master the Art of Winning</h1>
-              <br><br>
-              <a href="#about" class="btn-get-started scrollto">Get Started</a>
-          </div>
-      </section><!-- End Hero -->
-  </div>
+
+
+
         <!-- Add more carousel items as needed -->
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
@@ -161,6 +182,7 @@
         <span class="visually-hidden">Next</span>
     </button>
 </div>
+
   
 
 
@@ -177,9 +199,7 @@
               <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
                   <h3>Unleash Your Inner Options Warrior:</h3>
                   <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum
+                    Option trading is a dynamic battlefield where strategy reigns supreme. Traders navigate volatility, wield intricate instruments, and master risk. Success demands discipline, adaptability, and relentless learning. Unleash your inner warrior; conquer the markets.
                 </p>
                   
                   <ul>
@@ -202,14 +222,12 @@
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
             <h1>Meet <strong>Diamond Job Gupta</strong></h1>
             <p class="fst-italic">
-              the founder and guiding force behind Options Kurukshetra. With over half a decade of experience in finance and customer service, Diamond's passion lies in empowering individuals to navigate the options market with confidence. He brings his dedication to clear and concise education to create a learning experience that equips you with the knowledge and skills to conquer the world of options trading.
+              The founder and guiding force behind Options Kurukshetra. With over half a decade of experience in finance and customer service, Diamond's passion lies in empowering individuals to navigate the options market with confidence. He brings his dedication to clear and concise education to create a learning experience that equips you with the knowledge and skills to conquer the world of options trading.
 
             </p>
             
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
+              Options Kurukshetra, led by Diamond, offers unparalleled guidance in options trading. With expertise honed over years, it empowers traders with clear, concise education. Join a community dedicated to mastering the complexities of the options market and achieving financial success.
             </p>
           </div>
         </div>
@@ -269,62 +287,45 @@
   
 
     <!-- ======= Services Section ======= -->
+   
+  
     
     <section id="services" class="services">
       <div class="container">
-
+        
         <div class="section-title">
           <span>Courses</span>
           <h2>Courses</h2>
           <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
         </div>
 
-        <div class="container mt-5 mb-5">
-          <div class="d-flex justify-content-center row">
-              <div class="col-md-10">
-                  <div class="row p-2 bg-white border rounded">
-                      <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
-                      <div class="col-md-6 mt-1">
-                          <h5>Technical Analysis</h5>
-                         
-                          <div class="mt-1 mb-1 spec-1"><span class="dot"></span><span>Introduction to Technical Analysis</span><br><span class="dot"></span><span>Types of Charts</span><br>
-                          <span class="dot"></span><span>Candlesticks Pattern & Psycology</span><br><span class="dot"></span><span>Trend Analysis, Support & Resistanse Level</span><br>
-                          <span class="dot"></span><span>Chart patterns linked to support and resistance</span><br><span class="dot"></span><span>Gap Theories</span><br>
-                          <span class="dot"></span><span>Different types of Trading Strategies</span><br><span class="dot"></span><span>What is Day Trading</span><br>
-                          <span class="dot"></span><span>Trading Psycology</span></div>
-                      </div>
-                      <div class="align-items-center align-content-center col-md-3 border-left mt-1">
-                          <div class="d-flex flex-row align-items-center">
-                              <h4 class="mr-1">₹7,499</h4><span class="strike-text"> ₹14,999</span>
-                          </div>
-                          <h6 class="text-success">Join Now</h6>
-                          <div class="d-flex flex-column mt-4"><button class="btn btn-dark btn-sm" type="button">Details</button><button class="btn btn-outline-dark btn-sm mt-2" type="button">Click to Register</button></div>
+       
+         
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="card mb-4">
+                      <img src="assets/img/Technical Analysis Course.jpeg" class="card-img-top" alt="Course 1 Image">
+                      <div class="card-body">
+                          <h2 class="card-title"><strong>Technical Analysis Course</strong></h2>
+                          
+                          <a href="#" class="btn btn-success">Learn More</a>
                       </div>
                   </div>
-                  <div class="row p-2 bg-white border rounded mt-2">
-                      <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="https://images.unsplash.com/photo-1559526324-593bc073d938?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
-                      <div class="col-md-6 mt-1">
-                          <h5>Adcanced Options</h5>
-                         
-                          <div class="mt-1 mb-1 spec-1"><span class="dot"></span><span>Introduction to Options</span><br><span class="dot"></span><span>Scope of option buying</span><br>
-                            <span class="dot"></span><span>Advance Option Strategies (3 days)</span><br><span class="dot"></span><span>Introduction to Call Options & Put Options </span><br>
-                            <span class="dot"></span><span>Risk & Margin Management</span><br><span class="dot"></span><span>Intrinsic Value</span><br>
-                            <span class="dot"></span><span>Call Options Buying</span><br><span class="dot"></span><span>Writing a Call Option/Selling</span><br>
-                            <span class="dot"></span><span>Expiry and Strike Price</span><br><span class="dot"></span><span>Moneyness and Premium</span></div>
-                        </div>
-                      <div class="align-items-center align-content-center col-md-3 border-left mt-1">
-                          <div class="d-flex flex-row align-items-center">
-                              <h4 class="mr-1">₹15,999</h4><span class="strike-text"> ₹24,999</span>
-                          </div>
-                          <h6 class="text-success">Join Now</h6>
-                          <div class="d-flex flex-column mt-4"><button class="btn btn-dark btn-sm" type="button">Details</button><button class="btn btn-outline-dark btn-sm mt-2" type="button">Click to Register</button></div>
+              </div>
+              <div class="col-md-6">
+                  <div class="card mb-4">
+                      <img src="assets/img/Advance Options.jpeg" class="card-img-top" alt="Course 2 Image">
+                      <div class="card-body">
+                          <h2 class="card-title"><strong>Advanced Option Trading Course</strong></h2>
+                          
+                          <a href="#" class="btn btn-success">Learn More</a>
                       </div>
                   </div>
-                 
-                  
               </div>
           </div>
-      </div>
+      
+
+        
 
         <div class="row">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
@@ -388,7 +389,7 @@
 
         <div class="section-title">
           <span>Free Courses</span>
-          <h2>Free Courses</h2>
+          <br>
           <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
         </div>
 
@@ -421,12 +422,12 @@
             <!-- Add more video entries as needed -->
           </div>
         </div>
+       
 
       </div>
     </section><!-- End Portfolio Section -->
 
-   
-
+    <hr>
   
 
     <!-- ======= Contact Section ======= -->
@@ -435,7 +436,7 @@
 
         <div class="section-title">
           <span>Contact</span>
-          <h2>Contact</h2>
+       <br>
           <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
         </div>
 
@@ -577,6 +578,8 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+ 
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

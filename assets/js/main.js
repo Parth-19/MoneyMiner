@@ -1,10 +1,4 @@
-/**
-* Template Name: Day
-* Updated: Jan 29 2024 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -226,6 +220,8 @@
       clickable: true
     }
   });
+
+  
 
   /**
    * Animation on scroll

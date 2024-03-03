@@ -233,6 +233,7 @@ h6 {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
+  color: #000000;
 }
 
 .navbar a:hover,
@@ -240,6 +241,7 @@ h6 {
 .navbar .active:focus,
 .navbar li:hover>a {
   background: #ECD8BD;
+  color: #000000;
 }
 
 .navbar .dropdown ul {
@@ -252,7 +254,7 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: #000000;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -273,7 +275,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #fff;
+  color: #000000;
 }
 
 .navbar .dropdown:hover>ul {
@@ -422,10 +424,11 @@ h6 {
 .hero {
   width: 100%;
   height: calc(100vh - 110px);
-  background: url("../img/hero-bg.jpg") top center;
+  /* background: url("../img/hero-bg.jpg") top center; */
   background-size: cover;
   position: relative;
 }
+
 
 .hero:before {
   content: "";
@@ -478,39 +481,39 @@ h6 {
 
 @media (max-width: 768px) {
   .hero {
-      text-align: center;
-  }
+    text-align: center;
+}
 
-  .hero .container {
-      padding-top: 40px;
-  }
+.hero .container {
+    padding-top: 40px;
+}
 
-  .hero h1 {
-      font-size: 28px;
-      line-height: 36px;
-  }
+.hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+}
 
-  .hero h2 {
-      font-size: 18px;
-      line-height: 24px;
-      margin-bottom: 30px;
-  }
+.hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-    position: absolute;
-    bottom: 5px; /* Adjust as needed */
-    width: auto; /* Adjust width if necessary */
-    z-index: 1; /* Ensure buttons appear above slides */
+  position: absolute;
+  bottom: 5px; /* Adjust as needed */
+  width: auto; /* Adjust width if necessary */
+  z-index: 1; /* Ensure buttons appear above slides */
 }
 
 .carousel-control-prev {
-    left: 5px;
+  left: 20px;
 }
 
 .carousel-control-next {
-    right: 5px;
+  right: 20px;
 }
 
 
@@ -634,7 +637,7 @@ section {
 }
 
 .why-us .box:hover {
-  background: #ECD8BD;
+  background: #000000;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
@@ -711,7 +714,7 @@ section {
   top: -8px;
   height: 100%;
   width: 100%;
-  background: rgba(204, 22, 22, 0.15);
+  background: rgba(129, 117, 117, 0.15);
   transition: all 0.3s ease-out 0s;
   transform: translateZ(-1px);
   z-index: -1;
@@ -734,8 +737,8 @@ section {
 }
 
 .services .icon-box:hover {
-  background: #ECD8BD;
-  border-color: #ECD8BD;
+  background: #000000;
+  border-color: #000000;
   padding: 70px 20px 90px 20px;
 }
 
@@ -744,7 +747,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #ECD8BD;
+  color: #000000;
 }
 
 .services .icon-box:hover .icon::before {
@@ -760,7 +763,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1504805572947-34fad45aed93?q=80&w=2607&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") fixed center center;
   background-size: cover;
   padding: 120px 0;
 }
@@ -797,6 +800,9 @@ body{background:#eee}.ratings i{font-size: 16px;color: red}.strike-text{color: r
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.portfolio{
+  background-color: #000000;
+}
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 25px auto;
@@ -813,7 +819,7 @@ body{background:#eee}.ratings i{font-size: 16px;color: red}.strike-text{color: r
   font-weight: 500;
   line-height: 1;
   text-transform: uppercase;
-  color: #444444;
+  color: #ECD8BD;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
   font-family: "Poppins", sans-serif;
@@ -848,11 +854,11 @@ body{background:#eee}.ratings i{font-size: 16px;color: red}.strike-text{color: r
   font-size: 18px;
   color: #fff;
   font-weight: 600;
-  color: #000000;
+  color: #ECD8BD;
 }
 
 .portfolio .portfolio-item .portfolio-info p {
-  color: #4c4c4c;
+  color: #ECD8BD;
   font-size: 14px;
   margin-bottom: 0;
 }
@@ -1143,10 +1149,13 @@ body{background:#eee}.ratings i{font-size: 16px;color: red}.strike-text{color: r
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact{
+  background-color: #000000;
+}
 .contact .info-box {
-  color: #444444;
+  color: #ffffff;
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0);
   padding: 20px 0 30px 0;
 }
 
@@ -1155,12 +1164,12 @@ body{background:#eee}.ratings i{font-size: 16px;color: red}.strike-text{color: r
   color: #ECD8BD;
   border-radius: 50%;
   padding: 8px;
-  border: 2px dotted #f5a0a0;
+  border: 2px dotted #ECD8BD;
 }
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #777777;
+  color: #ECD8BD;
   font-weight: 700;
   margin: 10px 0;
 }
@@ -1173,7 +1182,7 @@ body{background:#eee}.ratings i{font-size: 16px;color: red}.strike-text{color: r
 }
 
 .contact .php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0);
   padding: 30px;
 }
 
@@ -1242,7 +1251,7 @@ body{background:#eee}.ratings i{font-size: 16px;color: red}.strike-text{color: r
   background: #ECD8BD;
   border: 0;
   padding: 10px 24px;
-  color: #fff;
+  color: #000000;
   transition: 0.4s;
 }
 
@@ -1454,4 +1463,10 @@ body{background:#eee}.ratings i{font-size: 16px;color: red}.strike-text{color: r
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
   }
+}
+hr {
+  border: 0; /* Remove default border */
+  height: 1px; /* Set the height of the line */
+  background-color: #ECD8BD; /* Set the color of the line */
+  margin: 1.5px 0; /* Adjust margin as needed */
 }
