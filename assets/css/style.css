@@ -139,7 +139,7 @@ h6 {
 }
 
 #topbar .contact-info .phone-icon {
-  margin-left: 15px;
+  margin-left: 5px;
 }
 
 #topbar .social-links a {
@@ -705,6 +705,16 @@ section {
   background-size: cover;
   padding: 120px 0;
 }
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 600px) {
+  .cta {
+    padding: 80px 0; /* Adjust padding for smaller screens */
+    background-size:690px ; /* Adjust background size for smaller screens */
+  }
+}
+
+
 
 .cta h3 {
   color: #fff;
