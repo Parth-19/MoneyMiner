@@ -65,25 +65,7 @@
         }
     }
   </style>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var heroCarousel = document.getElementById('heroCarousel');
-        var carousel = new bootstrap.Carousel(heroCarousel, {
-            interval: false // Disable auto sliding
-        });
-
-        var carouselNext = document.querySelector('.carousel-control-next');
-        var carouselPrev = document.querySelector('.carousel-control-prev');
-
-        carouselNext.addEventListener('click', function() {
-            carousel.next();
-        });
-
-        carouselPrev.addEventListener('click', function() {
-            carousel.prev();
-        });
-    });
-</script>
+ 
 
  
 
@@ -134,12 +116,14 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <div class="hero-video">
-    <video autoplay muted loop>
-        <source src="assets/VID-20240302-WA0002.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-</div>
+  <body>
+    <div class="hero-video">
+        <video autoplay muted loop playsinline>
+            <source src="assets/VID-20240302-WA0002.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
 
 
       
